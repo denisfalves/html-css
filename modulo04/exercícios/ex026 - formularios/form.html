@@ -15,7 +15,13 @@
     <!--
         Métodos de envio de formulário
         GET: 
-        POST:
+            - Quando os dados não forem sensíveis
+            - Os formulários GET são compartilháveis
+            - Dados por GET não podem ultrapassar 3k bytes (3k letras), logo nao dá pra usar em caso de arquivo ou enviou de fotos
+        POST: 
+            - Quando os dados forem sensíveis, senha, cep, endereço, numero de cartão
+            - Dados não aparecem na URL. Não são compartilháveis
+            - Dados por POST podem ultrapassar 3k bytes
     -->
     <h1>Meu primeiro formulário</h1>
     <form action="cadastro.php" method="GET" autocomplete="off">
